@@ -61,11 +61,11 @@
 
 
 
-const arr = [2,88,44,55,1,55,66,2,44,14,36,74,12];
-const res = arr.sort((a,b) => {
-    return a - b
-})
-console.log(res)
+// const arr = [2,88,44,55,1,55,66,2,44,14,36,74,12];
+// const res = arr.sort((a,b) => {
+//     return a - b
+// })
+// console.log(res)
 
 
 

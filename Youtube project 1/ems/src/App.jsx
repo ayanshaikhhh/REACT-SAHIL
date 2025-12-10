@@ -4,6 +4,7 @@ import EmployeeDashboard from "./components/Dashboard/EmployeeDashboard";
 import AdminDashboard from "./components/Dashboard/AdminDashboard";
 // import { getLocalStorage, setLocalStorage } from './utils/localStorage'
 import { AuthContext } from "./context/AuthProvider";
+import AuthProvider from "./context/AuthProvider";
 // import { data } from 'autoprefixer'
 
 const App = () => {
@@ -25,6 +26,57 @@ const App = () => {
     }
   }, []);
 
+
+
+// ------------------------------
+
+
+
+  // const handleLogin = (email, password) => {
+  //   // Admin check
+  //   if (email === "admin@me.com" && password === "123") {
+  //     setUser("admin");
+  //     localStorage.setItem("loggedInUser", JSON.stringify({ role: "admin" }));
+  //     return;
+  //   }
+
+  //   // Employee check - wait for userData to load
+  //   if (!userData || userData.length === 0) {
+  //     alert("Loading employee data... Please try again");
+  //     return;
+  //   }
+
+  //   const employee = userData.find(
+  //     (e) => email === e.email && e.password === password
+  //   );
+    
+  //   if (employee) {
+  //     setUser("employee");
+  //     setLoggedInUserData(employee);
+  //     localStorage.setItem(
+  //       "loggedInUser",
+  //       JSON.stringify({ role: "employee", data: employee })
+  //     );
+  //   } else {
+  //     alert("Invalid credentials");
+  //   }
+  // };
+
+
+// ----------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
   const handleLogin = (email, password) => {
     if (email == "admin@me.com" && password == "123") {
       setUser("admin");
@@ -41,6 +93,7 @@ const App = () => {
           JSON.stringify({ role: "employee", data: employee })
         );
       }
+
     } else {
       alert("invalid crexentials");
     }
